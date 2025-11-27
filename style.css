@@ -1,10 +1,11 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: rgb(0, 0, 33);
+  background-color: #121212;
   color: white;
   font-family: "Poppins", sans-serif;
 }
@@ -16,7 +17,7 @@ nav {
   padding: 0 20px;
   align-items: center;
   height: 80px;
-  background-color: #112240;
+  background-color: #1e1e1e;
 }
 
 nav ul {
@@ -30,12 +31,12 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #e5e5e5;
   transition: 0.2s;
 }
 
 nav ul li a:hover {
-  color: rgb(125, 125, 204);
+  color: #d3d3d3;
   font-size: 1.05rem;
 }
 
@@ -67,12 +68,18 @@ nav ul li a:hover {
 
 .leftSection .btn {
   padding: 12px;
-  background-color: rgb(2, 43, 97);
+  background-color: #1e1e1e;
   color: white;
   border: 2px solid white;
   border-radius: 6px;
   font-size: 15px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.leftSection .btn:hover {
+  background-color: #d3d3d3;
+  color: black;
 }
 
 .rightSection img {
@@ -80,12 +87,9 @@ nav ul li a:hover {
   max-width: 300px;
 }
 
-.purple {
-  color: #64ffda;
-}
-
+.purple,
 #element {
-  color: #64ffda;
+  color: #d3d3d3;
 }
 
 /* SECOND SECTION */
@@ -94,7 +98,7 @@ nav ul li a:hover {
   margin: auto;
 }
 
-/* Center the heading */
+/* heading */
 .section-heading {
   text-align: center;
   font-size: 2.2rem;
@@ -111,10 +115,10 @@ nav ul li a:hover {
 }
 
 .project {
-  background: #112240;
+  background: #1e1e1e;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 
@@ -133,12 +137,12 @@ nav ul li a:hover {
 }
 
 .project-info h3 {
-  color: #64ffda;
+  color: #d3d3d3;
   margin-bottom: 0.5rem;
 }
 
 .project-info a {
-  color: #64ffda;
+  color: #d3d3d3;
   text-decoration: none;
 }
 
@@ -146,7 +150,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/*Skills*/
+/* SKILLS */
 #skills {
   text-align: center;
   padding: 50px 20px;
@@ -169,7 +173,7 @@ nav ul li a:hover {
 
 .skill i {
   font-size: 40px;
-  color: #64ffda;
+  color: #d3d3d3;
 }
 
 .skill p {
@@ -194,11 +198,11 @@ form {
   gap: 1.2rem;
   max-width: 500px;
   margin: 2rem auto;
-  background: #0a192f;
+  background: #1b1b1b;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(100, 255, 218, 0.15);
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
 input,
@@ -207,7 +211,7 @@ textarea {
   border-radius: 8px;
   border: 2px solid transparent;
   outline: none;
-  background: #112240;
+  background: #1e1e1e;
   color: #fff;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -215,13 +219,13 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border: 2px solid #64ffda;
-  box-shadow: 0 0 10px rgba(100, 255, 218, 0.4);
+  border: 2px solid #d3d3d3;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
 
 button {
-  background: #64ffda;
-  color: #0a192f;
+  background: #d3d3d3;
+  color: black;
   border: none;
   padding: 0.9rem;
   border-radius: 8px;
@@ -232,10 +236,10 @@ button {
 }
 
 button:hover {
-  background: #112240;
-  color: #64ffda;
+  background: #1e1e1e;
+  color: white;
   transform: translateY(-3px);
-  box-shadow: 0 0 15px rgba(100, 255, 218, 0.4);
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
 }
 
 .contact-info {
@@ -247,19 +251,13 @@ button:hover {
 
 /* FOOTER */
 footer {
-  background-color: #112240;
+  background-color: #1e1e1e;
   padding: 20px 0;
   text-align: center;
   color: whitesmoke;
   margin-top: 40px;
 }
 
-footer p {
-  margin-bottom: 10px;
-  font-size: 0.95rem;
-}
-
-/* FOOTER SOCIAL ICONS */
 .footer-socials {
   display: flex;
   justify-content: center;
@@ -269,23 +267,17 @@ footer p {
 
 .footer-icon {
   font-size: 1.9rem;
-  color: #ccd6f6;
+  color: #dcdcdc;
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* Hover Animation */
 .footer-icon:hover {
-  color: #64ffda;
+  color: white;
   transform: translateY(-6px) scale(1.15);
-  text-shadow: 0 0 10px rgba(100, 255, 218, 0.7);
+  text-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
 
-
-
-/* ---------------------- */
-/*    RESPONSIVE MOBILE   */
-/* ---------------------- */
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
   nav ul {
     gap: 10px;
@@ -344,4 +336,8 @@ footer p {
   .projects-container {
     grid-template-columns: 1fr;
   }
+}
+a {
+  color: white;
+  text-decoration: none;
 }
