@@ -110,17 +110,25 @@ nav ul li a:hover {
 .projects-container {
   display: grid;
   text-align: center;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* EXACTLY 3 per row */
   gap: 1.5rem;
 }
 
 .project {
   background: #1e1e1e;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: hidden; /* IMPORTANT */
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
+
+.project iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  display: block; /* prevents inline whitespace issues */
+}
+
 
 .project:hover {
   transform: translateY(-8px);
@@ -149,6 +157,7 @@ nav ul li a:hover {
 .project-info a:hover {
   text-decoration: underline;
 }
+
 
 /* SKILLS */
 #skills {
